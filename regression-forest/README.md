@@ -15,7 +15,7 @@ Regression forests uses Decision Trees which do recursive splitting thus enablin
  Decision tree consists of nodes and leaves. The node is the feature value to do the split and the leaves are the class value to output. A training data that only contains one class will only have one leaf node. In all other cases tree construction will be recursive. Consider every single feature and every single split of each feature and select the split the minimizes the total loss for the loss function. Send that down and build two trees out of the two splits and keep going.
 
  Commonly used loss functions are 
- - Gini impurity : Probability that if you select two items from a dataset at random (with replacement), they will have a different class. Uses probability , so values partial success. Splits need to be weighted.
+ - Gini impurity : Probability that if you select two items from a dataset at random (with replacement), they will have a different class. Uses probability , so values partial success. Splits need to be weighted.  
  ![gini](../images/gini.png)   
  where pi is probability of selecting class i from the dataset.
  - Information gain : Also known as entropy, measures how much is learned from traversing a split. In general entropy denotes the number of bits required to encode the data with a given probability distribution. In case of a decision tree it is the number of bits obtained from traversing a split.  
