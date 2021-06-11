@@ -7,7 +7,7 @@ Random forest algorithm were winning before deep learning came along and it is s
 
 Regression forests uses Decision Trees which do recursive splitting thus enabling splitting of real world data which is not axis-aligned. An example shown in figure below (using information gain):
 
- ![Recursive Splitting](..\images\dt.png)
+ ![Recursive Splitting](../images/dt.png)
 
 
 ## Decision trees  
@@ -16,10 +16,10 @@ Regression forests uses Decision Trees which do recursive splitting thus enablin
 
  Commonly used loss functions are 
  - Gini impurity : Probability that if you select two items from a dataset at random (with replacement), they will have a different class. Uses probability , so values partial success. Splits need to be weighted.
- ![gini](..\images\gini.png)   
+ ![gini](../images/gini.png)   
  where pi is probability of selecting class i from the dataset.
  - Information gain : Also known as entropy, measures how much is learned from traversing a split. In general entropy denotes the number of bits required to encode the data with a given probability distribution. In case of a decision tree it is the number of bits obtained from traversing a split.  
- ![gini](..\images\infogain0.png)
+ ![gini](../images/infogain0.png)
 
  Information gain works for regression since IG works for anything that is a probability distribution. Gini is only defined for discrete type of variables.
 
